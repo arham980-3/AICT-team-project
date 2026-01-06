@@ -1,0 +1,336 @@
+\documentclass[17pt,a4paper]{article}
+%------------------packeges-------------------------------
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{array}
+\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage{ulem} % for underline
+\usepackage{tocloft}
+\usepackage{geometry}
+\usepackage{cite}
+
+
+
+ \onehalfspacing
+%-------------------document---------------------------------
+\begin{document}
+%--------------------------title page-------------------------
+\begin{titlepage}
+
+    \begin{centering}
+        
+    
+    
+    \Huge\textbf{University of Engineering and Technology Lahore FSD Campus}\\
+    \LARGE {Department of mechanical, mechatronics and manufacturing engineering}\vspace{1cm}
+    \\
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.5\linewidth]{Uet logo.png}
+        
+        \label{fig:placeholder}
+    \end{figure}
+    
+    {\LARGE\textbf{(DESIGN CUSTOMER COMPLAINT TRACKING SYSTEM)}}
+    \\
+    \hspace{-6cm}{\LARGE\textbf{Submmitted by:}\Large (Group 01)}
+    \\
+    \hspace{-1cm}{\Large{2025-MC-151}}\\
+   \hspace{-1cm} {\Large 2025-MC-175}\\
+    \hspace{-1cm}{\Large 2025-MC-183}\\
+   \hspace{-1cm}{\Large 2025-MC-195}\\
+  \hspace{-1cm}  \hspace{-7.8cm}{\LARGE\textbf{Submitted to:}\\
+    {\Large Engineer Muhammad Umer}}\\
+ \end{titlepage}
+    \end{centering}
+%-----------------------table of contents---------------------
+\begin{centering}
+    
+
+\newpage
+\tableofcontents
+\end{centering}
+
+%---------------------------Introduction-----------------------
+\newpage
+
+\section{{Introduction:}}
+\hspace{1cm}\large{A Customer Complaint Tracking System (CCTS) is designed to efficiently \textbf{record}, \textbf{manage}, and \textbf{resolve} customer complaints. It provides a structured way to track complaints from \textbf{submission} to \textbf{resolution}, ensuring timely responses and accountability. By maintaining proper records, the system ensures that complaints are handled on time and that responsibility is clearly assigned. 
+\\
+In certain circumstances, customers become almost inevitably unhappy due to various problems or difficulties
+that are not always under the direct control of the company. Encouraging clients to express their discontent is the
+first step recommended to managers in their effort to systematically learn about customer negative experiences,
+restore satisfaction, and strengthen business relationships. A CCTS also allows organizations to review complaint data and understand common customer concerns. The system helps improve service quality, \textbf{customer satisfaction}, and overall organizational efficiency.}
+\\
+\\
+\section{Problem Definition:}
+    \large{
+
+ \begin{itemize}
+     \item Many organizations still use manual methods such as \textbf{registers} or \textbf{emails} to handle customer complaints.
+ \end{itemize}
+
+\begin{itemize}
+    \item These methods often cause \textbf{delayed responses} and \textbf{misplaced} or \textbf{incomplete records.}
+\end{itemize}
+
+\begin{itemize}
+    \item There is no proper system to track the \textbf{current status} of complaints.
+\end{itemize}
+\begin{itemize}
+    \item Inadequate tracking systems may result in complaints being lost or disregarded.
+\end{itemize}
+
+\begin{itemize}
+    \item As the number of complaints increases, management finds it difficult to monitor resolution performance.
+\end{itemize}
+
+\begin{itemize}
+    \item Poor complaint handling results in customer \textbf{dissatisfaction} and low service quality.
+\end{itemize}
+
+
+\begin{itemize}
+    \item There are gaps in communication between support employees and customers.
+\end{itemize}
+\begin{itemize}
+    \item Prioritizing critical or urgent complaints is difficult.
+\end{itemize}
+
+\begin{itemize}
+    \item It takes time to create reports and examine complaint patterns.
+\end{itemize}
+\begin{itemize}
+    \item Customers become dissatisfied and lose trust when complaints are not resolved
+\end{itemize}
+\begin{itemize}
+    \item Therefore, an \textbf{ICT-based customer complaint tracking system} is required to efficiently record, monitor, and analyze complaints.
+\end{itemize}
+}
+%----------------------------Literature review--------------
+\newpage
+\section{Literature Review}
+
+Customer complaint tracking systems are widely used to improve service quality and customer satisfaction. Organizations receive complaints through various channels, and manual handling often results in delays and poor record management. To overcome these issues, researchers have proposed automated complaint tracking systems.
+
+In 2024, a study was made by \textbf{Fakhriyah,} \cite{Fakhriyah2024} which focuses on the development of an information system specifically designed to address issues related to service disruption complaints frequently encountered by customers of PT Integra Kreasitama Solusindo.
+\\
+\\
+In 2022, a study was made by \textbf{Preuss, M., Santini, F. Ode}\cite{Preuss}. The objective of this research was to investigate satisfaction
+with the management of complaints through perceptions of organizational justice and its subsequent impact on organizational commitment,
+involvement, and engagement at work of internal customers in the
+shared services centers (SSC).
+\\
+\\
+In recent years, research was conducted by \textbf{Baskaran, PK}\cite{Baskaran2025}. This research pursued a new approach to classify customer feedback in banks
+using a blend of language processing methods and deep learning technologies
+\\
+\\
+Overall, existing systems mainly focus on complaint registration and resolution. Limited attention has been given to intelligent prioritization and predictive analysis. Therefore, there is a need for an efficient and intelligent customer complaint tracking system to address these limitations.
+
+
+%----------------------------Proposed System---------------
+\newpage
+\section{Proposed System:}
+{
+The proposed Customer Complaint Tracking System is an automated platform designed to manage and \textbf{monitor} customer complaints efficiently. It allows organizations to track complaints received through WhatsApp, email, or other channels in a centralized system.
+
+When a customer submits a complaint, the system automatically adds it to the database and assigns a \textbf{unique ID} to each complaint. The system also captures essential details, including.
+
+\begin{itemize}
+    \item Customer Name
+\end{itemize}
+
+\begin{itemize}
+    \item Complaint Description
+\end{itemize}
+
+\begin{itemize}
+    \item Complaint Department
+\end{itemize}
+
+\begin{itemize}
+    \item Complaint Date
+\end{itemize}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.999\textwidth]{WhatsApp Image 2026-01-05 at 10.46.00 AM.jpeg}
+  \caption{Proposed System}
+  \label{fig:sample}
+\end{figure}
+
+Each complaint is assigned a \textbf{priority level}, either \textbf{high}, \textbf{urgent}, or \textbf{low}, which is visually represented using \textbf{colors} and \textbf{line} charts to help management quickly identify high-priority issues.
+
+The system tracks the status of each complaint as \textbf{pending}, \textbf{in progress}, or \textbf {Resolved}, and also records the \textbf{resolved date} when the complaint is addressed.
+
+To monitor performance and workflow efficiency, the system provides line charts and progress reports to show trends in complaints, resolution rates, and departmental performance. This helps the organization analyze recurring issues, improve service quality, and ensure the timely resolution of complaints.
+
+Overall, this system provides a user-friendly, transparent, and efficient solution for handling customer complaints, ensuring faster resolution, better prioritization, and effective performance tracking.
+    }
+   
+%-----------------------------Data set and analysis--------
+\newpage
+ \section{Data set and analysis:}
+    {(Figure 1) shows the data set and analysis of the Customer Complaint Tracking System.}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=1\textwidth]{project main.png}
+  \caption{Data set and analysis}
+  \label{fig:sample}
+\end{figure}
+\subsection{Explanation of System Components (fig. 2):}
+
+    \subsubsection{ Total complaints:}
+\hspace{1cm}{{Total complaints is one of the parts (components) of our system, which shows the total entries, including all types of complaints, i.e., \textbf{Closed}, \textbf{in progress}, \textbf {open}. (fig. 3).
+}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.3\textwidth]{WhatsApp Image 2026-01-05 at 2.11.19 PM.jpeg}
+  \caption{Total Complaints}
+  \label{fig:sample}
+\end{figure}
+
+\subsubsection{Line Graphs:}
+\hspace{1cm}{The second main component of our system is line graphs, which further consist of the following parts:}
+\begin{itemize}
+    \item Complaints by priorities
+\end{itemize}
+
+The graph of complaints by priorities shows the number of complaints of different priority types.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Complaints by priorities.png}
+    \caption{Line graph}
+    \label{fig:placeholder}
+\end{figure}
+
+\begin{itemize}
+    \item Complaints by status
+\end{itemize}
+{ The graph titled "Complaints by Status" illustrates the number of complaints categorized as resolved, open, and in progress. }
+\\
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Complaints By Priorties.png}
+    \caption{Line graph}
+    \label{fig:placeholder}
+\end{figure}
+}
+\\
+\subsubsection{Dataset:}
+{The data set is the core component of \textbf{CCTS,} which further consists of the following parts:
+{\begin{itemize}
+    \item Complaint ID
+\end{itemize}
+\begin{itemize}
+    \item Customer Name
+\end{itemize}
+{\begin{itemize}
+    \item Complaint Description
+\end{itemize}}
+\begin{itemize}
+    \item Department
+\end{itemize}
+\begin{itemize}
+    \item Priority level
+\end{itemize}}
+\begin{itemize}
+    \item Complaint Date
+\end{itemize}
+\begin{itemize}
+    \item Status
+\end{itemize}
+\begin{itemize}
+    \item Resolved Date
+\end{itemize}
+}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\linewidth]{WhatsApp Image 2026-01-05 at 10.46.00 AM.jpeg}
+    \caption{Data set}
+    \label{fig:placeholder}
+\end{figure}
+%-----------------------------DBMS Schema--------------------
+\section{DBMS Schema:}
+DBMS is the main component of the Customer Complaint Tracking System (CCTS). In this system, the DBMS is used to store all complaint-related data, including both current and historical records. It ensures secure storage, easy retrieval, and efficient management of present as well as past entries, thereby supporting effective tracking, analysis, and reporting of customer complaints.
+Google Sheets can also do that, but DBMS is more effective.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\linewidth]{WhatsApp Image 2026-01-06 at 5.47.06 AM.jpeg}
+    \caption{Data base }
+    \label{fig:placeholder}
+\end{figure}
+
+\newpage
+\subsection{Updating records in DBMS:}
+When a customer submits a new complaint, the team uses database INSERT and UPDATE commands to record the complaint details and assign a unique complaint ID
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\linewidth]{WhatsApp Image 2026-01-06 at 9.18.17 AM (1).jpeg}
+    \caption{Updating command}
+    \label{fig:placeholder}
+\end{figure}
+ 
+ \\
+ 
+ {All relevant information is stored securely in the DBMS (fig. 7).}
+
+When the complaint is resolved, the system updates the corresponding record by adding the resolution date and changing the complaint status accordingly.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\linewidth]{WhatsApp Image 2026-01-06 at 9.15.38 AM.jpeg}
+    \caption{updating date }
+    \label{fig:placeholder}
+\end{figure}
+
+This process ensures accurate record maintenance and efficient tracking of complaint progress within the database.
+%------------------------system diagram---------------
+\newpage                                                    
+\section{System Diagram:}
+{\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\linewidth]{System diagram.jpeg}
+    \caption{System Diagram}
+    \label{fig:placeholder}
+\end{figure}
+}
+
+\section{Results}
+The results show that the Customer Complaint Tracking System efficiently organizes complaint data and tracks their status. Using the dataset, it was easy to identify open, in-progress, and closed complaints. Priority-based records helped highlight urgent issues. The system enables better monitoring and supports timely decision-making.
+\subsection{Researches:}
+
+\begin{itemize}
+    \item Research on complaint handling indicates that traditional systems without automated tracking often resulted in long response times, with many companies taking more than 48 hours to address customer complaints due to multiple approval steps and fragmented procedures. Studies also show that delays in response are associated with lower customer satisfaction, and in online complaint contexts, customers expect companies to reply within a few hours for satisfactory service. These findings highlight the need for systems like the Customer Complaint Tracking System (CCTS), which can improve response times and service recovery.\cite{Zhang2025}
+\end{itemize}
+
+\begin{itemize}
+    \item NYC 311 is an official government complaint tracking system that lets citizens report issues and monitor status through a central service. \cite{NYC 311 }
+\end{itemize}
+
+\section{Conclusion:}
+{ The Customer Complaint Tracking System provides an \textbf{easy} and \textbf{ organized } way to manage customer complaints all in one place. By bringing together complaints from different sources like WhatsApp and email, it ensures that all records are \textbf{accurate} and easy to access. With unique complaint IDs, priority levels, and status tracking, the system helps teams keep an eye on issues and resolve them quickly.
+\\
+The system also uses \textbf{visual charts} to show progress, making it clear for everyone involved and helping in making better decisions. By tracking when complaints are made and when they are resolved, organizations can see how well they are doing and find ways to \textbf{improve}. Overall, this system helps make operations smoother,\textbf{builds stronger trust with customers}, and enhances the quality of service provided.}
+\\
+
+\begin{thebibliography}{10}
+\bibitem{Fakhriyah2024}
+{M Fakhriyah and R Kurniawan : Universitas Islam Negeri Sumatera Utara, Indonesia}
+\bibitem{Preuss}
+{Santini, FOde, DAB Marconatto - RAM. Revista 2022, undefined}
+\bibitem{Baskaran2025}
+{PK Baskaran: Baskaran, Pratheep Kumar (2023) Enhancing Customer Complaint Classification in Banking: A Deep Learning and Natural Language Processing Approach. Masters thesis, Dublin, National College of Ireland.}
+\bibitem{Zhang2025}
+{Yang Zhang: Research on Complaint Response Mechanism from the Perspective of Relationship Marketing}
+\bibitem{NYC 311}
+{Look Up Service Requests · NYC311 - NYC.gov}
+\end{thebibliography}
+
+
+
+
+\end{document}
