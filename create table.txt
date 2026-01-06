@@ -1,0 +1,26 @@
+CREATE TABLE complaints (
+    complaint_id INT PRIMARY KEY,
+    customer_name VARCHAR(50),
+    complaint_description VARCHAR(200),
+    department VARCHAR(30),
+    priority_level VARCHAR(20),
+    complaint_date DATE,
+    status VARCHAR(20),
+    resolve_date DATE
+);
+
+-- Insert records into complaints table
+INSERT INTO complaints VALUES
+(22456, 'Noman Ali', 'Want to buy custom software', 'Sales', 'High', '2025-12-31', 'In Progress', '2026-01-01'),
+(22457, 'Hassan Khan', 'App is not working', 'Technical', 'Low', '2026-01-01', 'Open', NULL),
+(22458, 'Ahmad Mukhtar', 'Not delivered', 'Delivery', 'Low', '2026-01-01', 'Open', NULL),
+(22459, 'Ibra Khan', 'App is glitching', 'Support', 'High', '2026-01-01', 'In Progress', NULL),
+(22460, 'Sana', 'Product damaged', 'Delivery', 'Moderate', '2026-01-02', 'Open', '2026-01-04'),
+(22461, 'Umer', 'Want to buy LCD', 'Sales', 'Low', '2026-01-02', 'Closed', '2026-01-04'),
+(22462, 'Soneela', 'Payment is not processing', 'Technical', 'Urgent', '2026-01-02', 'Closed', '2026-01-04'),
+(22463, 'Kajal Salman', 'Payment method is declined', 'Payment', 'High', '2026-01-03', 'Closed', '2026-01-04'),
+(22464, 'Hania Amir', 'Want to buy refrigerator', 'Sales', 'Moderate', '2026-01-03', 'Closed', '2026-01-04'),
+(22465, 'Babar Azam', 'Late delivery', 'Delivery', 'Urgent', '2026-01-03', 'Closed', '2026-01-03');
+
+-- Display all complaints
+SELECT * FROM complaints;
